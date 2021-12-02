@@ -20,14 +20,14 @@ function myFunction() {
        
 <script> 
     var titleCase = function(str, glue){
-    glue = (glue) ? glue : ['di','ke','dari','pada','dalam','yaitu','kepada','daripada','untuk','bagi','ala','bak','tentang','mengenai','sebab','secara','terhadap','di','ke','dari','dalam','atas','oleh','kepada','terhadap','akan','dengan','tentang','sampai','dan','serta','tapi','tetap','namun','melainkan','padahal','sedangkan','yang','agar','supayabiar','biarpun','jika','kalau','jikalau','asal','asalkan','bila','manakala','sejak','semenjak','sedari','sewaktu','tatkala','ketika','sementara','begitu','seraya','selagi','selama','sambil','demi','setelah','sesudah','sebelum','sehabis','selesai','seusai','hingga','sampai','andaikan','seandainya','umpamanya','sekiranya','biar','biarpun','walau','walaupun','sekalipun','sungguh','sungguhpun','kendati','kendatipun','seakan-akan','seolah-olah','sebagaimana','seperti','sebagai','laksana','ibarat','daripada','alih-alih','sebab','karena','olehkarena','olehsebab','sehingga','sampai','maka','makanya','','interjeksi','dong','sih','wow','yuk','lho','artikula','para','si','sih','pun','per'];
+    glue = (glue) ? glue : ['di','ke','dari','pada','dalam','yaitu','kepada','daripada','untuk','bagi','ala','bak','tentang','mengenai','sebab','secara','terhadap','di','ke','dari','dalam','atas','oleh','kepada','terhadap','akan','dengan','tentang','sampai','dan','serta','tapi','tetap','namun','melainkan','padahal','sedangkan','yang','agar','supayabiar','biarpun','jika','kalau','jikalau','asal','asalkan','bila','manakala','sejak','semenjak','sedari','sewaktu','tatkala','ketika','sementara','begitu','seraya','selagi','selama','sambil','demi','setelah','sesudah','sebelum','sehabis','selesai','seusai','hingga','sampai','andaikan','seandainya','umpamanya','sekiranya','biar','biarpun','walau','walaupun','sekalipun','sungguh','sungguhpun','kendati','kendatipun','seakan-akan','seakan','akan','seolah-olah','seolah','olah','sebagaimana','seperti','sebagai','laksana','ibarat','daripada','alih-alih', 'alih','sebab','karena','olehkarena','olehsebab','sehingga','sampai','maka','makanya','dong','sih','wow','yuk','lho','para','si','sih','pun','per'];
     return str.replace(/(\w)(\w*)/g, function(_, i, r){
         var j = i.toUpperCase() + (r != null ? r : "");
         return (glue.indexOf(j.toLowerCase())<0)?j:j.toLowerCase();
     });
 };
     
-    </script> 
+    </script>  
         
         <body>
             

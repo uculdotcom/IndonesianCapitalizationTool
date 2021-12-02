@@ -1,3 +1,22 @@
+<html>
+    <head>
+        <style>
+            .text
+            {
+                font-family:    Arial, Helvetica, sans-serif;
+
+            }
+        </style>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("hasil");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Teks tersalin: " + copyText.value);
+}
+</script>
+       
 <script> 
     var titleCase = function(str, glue){
     glue = (glue) ? glue : ['di','ke','dari','pada','dalam','yaitu','kepada','daripada','untuk','bagi','ala','bak','tentang','mengenai','sebab','secara','terhadap','di','ke','dari','dalam','atas','oleh','kepada','terhadap','akan','dengan','tentang','sampai','dan','serta','tapi','tetap','namun','melainkan','padahal','sedangkan','yang','agar','supayabiar','biarpun','jika','kalau','jikalau','asal','asalkan','bila','manakala','sejak','semenjak','sedari','sewaktu','tatkala','ketika','sementara','begitu','seraya','selagi','selama','sambil','demi','setelah','sesudah','sebelum','sehabis','selesai','seusai','hingga','sampai','andaikan','seandainya','umpamanya','sekiranya','biar','biarpun','walau','walaupun','sekalipun','sungguh','sungguhpun','kendati','kendatipun','seakan-akan','seolah-olah','sebagaimana','seperti','sebagai','laksana','ibarat','daripada','alih-alih','sebab','karena','olehkarena','olehsebab','sehingga','sampai','maka','makanya','','interjeksi','dong','sih','wow','yuk','lho','artikula','para','si','sih','pun','per'];
@@ -8,15 +27,24 @@
 };
     
     </script> 
-<div style="padding-top:5px; padding-right:20px; padding-bottom:20px; padding-left:20px">
-
+        
+        <body>
+            
+<div class="text" style="padding-top:5px; padding-right:20px; padding-bottom:20px; padding-left:20px">
 
 <h2>Title Capitalization Tool (Bahasa Indonesia)</h2>
 <form>
     <a style='font-size: 14pt'>Ketik disini:</a><br>
   <textarea style='font-size: 13pt'  rows="4" cols="40" name="input" onchange="form.output.value=titleCase(this.value)" onkeyup="form.output.value=titleCase(this.value)"></textarea>
     <br>  <br> <a style='font-size: 14pt'>Kapital yang benar:</a>
-  <br><textarea style='font-size: 13pt'  rows="4" cols="40" name="output" readonly onclick="select(this)"></textarea>
+  <br><textarea id="hasil" style='font-size: 13pt'  rows="4" cols="40" name="output" readonly onclick="select(this)"></textarea>
 </form>
     
-</div>
+
+
+
+<button style='font-size: 12pt' onclick="myFunction()">Salin Teks</button>
+        </div>
+        
+        </body>
+        </html>
